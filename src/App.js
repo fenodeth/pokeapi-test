@@ -1,17 +1,17 @@
 import "./App.css";
+import { Container } from "react-bootstrap";
+import Pokemon from "./components/Pokemon";
 import Navbar from "./components/Navbar";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
-      <div className="App">
-        <h1>holi</h1>
-        <h2>vamo a juga</h2>
-        <h3>que sucede</h3>
-      </div>
-    </div>
+      <Container>
+        <Pokemon />
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
