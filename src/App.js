@@ -1,15 +1,17 @@
 import "./App.css";
 import { Container } from "react-bootstrap";
 import Pokemon from "./components/Pokemon";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Header />
       <Container>
         <Pokemon />
       </Container>
+      <Footer />
     </>
   );
 };

@@ -31,7 +31,7 @@ const Pokemon = () => {
   let dataArray = [];
 
   const getPokemon = async () => {
-    for (let i = 1; i <= 48; i++) {
+    for (let i = 1; i <= 15; i++) {
       dataArray.push(await getPokemonData(i));
     }
     setPokemon(dataArray);
@@ -95,11 +95,12 @@ const Pokemon = () => {
                 inputProps={{ maxLength: 16 }}
                 error={!!errors?.name}
                 helperText={errors?.name?.message}
+                style={{ marginRight: 20 }}
               />
               <ColorButton
                 variant="contained"
                 type="submit"
-                style={{ marginTop: 10, marginLeft: 20 }}
+                style={{ marginTop: 10 }}
                 className="jr-btn jr-btn-lg"
               >
                 Buscar Pokemon

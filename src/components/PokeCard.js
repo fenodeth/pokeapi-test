@@ -1,4 +1,5 @@
 import React from "react";
+import "../App.css";
 import { Card } from "react-bootstrap";
 
 const PokeCard = ({ pokemon }) => {
@@ -22,6 +23,18 @@ const PokeCard = ({ pokemon }) => {
                   #{pokemon?.id} {pokemon?.name}
                 </p>
               </Card.Title>
+            </div>
+            <div className="row d-flex justify-content-around">
+              {pokemon?.types?.map((t, index) => {
+                return (
+                  <div
+                    className={`${t.type.name} col-4 fs-6 text-capitalize rounded border border-dark`}
+                    key={index}
+                  >
+                    {t.type.name}
+                  </div>
+                );
+              })}
             </div>
           </Card.Body>
         </div>

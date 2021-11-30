@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-const Navbar = () => {
+const Header = () => {
   let logoUrl =
     "https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png";
 
@@ -9,10 +9,10 @@ const Navbar = () => {
     <nav>
       <div>
         <img src={logoUrl} alt="pokeapi-logo" className="navbar-logo" />
-        <p>Testing PokeAPI</p>
+        <p className="fs-5 text-muted">Testing PokeAPI</p>
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Header;
